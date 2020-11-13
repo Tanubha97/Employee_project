@@ -1,18 +1,17 @@
 package com.dao;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-import javax.persistence.Query;
-import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Transactional;
-
 import com.bean.Employee;
 import com.bean.Project;
 import com.entity.EmployeeEntity;
 import com.entity.ProjectEntity;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class EmployeeProjectDAO{

@@ -1,17 +1,14 @@
 package com.service;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
-
 import com.bean.Employee;
 import com.bean.Project;
 import com.dao.EmployeeProjectDAO;
-import com.entity.EmployeeEntity;
-import com.entity.ProjectEntity;
 import com.exception.NoResourceException;
 import com.exception.SkillMismatchException;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 public class EmployeeProjectService{
