@@ -1,0 +1,20 @@
+create database handson_db;
+
+use handson_db;
+
+create table Project (
+projectid varchar(10) primary key,
+technology varchar(10),
+resourceCount integer);
+
+insert into Project values('P1','JAVA',0);
+insert into Project values('P2','SAP',5);
+insert into Project values('P3','SOA',8);
+insert into Project values('P4','TEST',10);
+
+create table Employee(
+employeeid integer primary key auto_increment,
+employeename varchar(20),
+gender char,
+skill varchar(10),
+projectid varchar(10) references Project(projectId));
