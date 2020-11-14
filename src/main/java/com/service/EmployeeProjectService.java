@@ -38,7 +38,7 @@ public class EmployeeProjectService{
 	 * (non-Javadoc)
 	 * @see com.service.IEmployeeProjectService#getAllProjects()
 	 */
-	public List<String> getAllProjects()throws Exception{
+	public List<String> getAllProjects() {
 		return dao.getAllProjects();
 		
 	}

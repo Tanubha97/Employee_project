@@ -42,7 +42,7 @@ public class EmployeeProjectDAO{
 		return project;
 	}
 	
-	public List<String> getAllProjects()throws Exception{
+	public List<String> getAllProjects() {
 		Query q=em.createQuery("SELECT p.projectId FROM ProjectEntity p");
 		List<String> projectIds=q.getResultList();
 		return projectIds;

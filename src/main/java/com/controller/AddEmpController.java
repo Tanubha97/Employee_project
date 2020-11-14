@@ -23,14 +23,14 @@ public class AddEmpController {
 	
 	
 	@RequestMapping("/home.htm")
-	public ModelAndView displayHomePage() throws Exception{	
+	public ModelAndView displayHomePage() {
 		ModelAndView mView=new ModelAndView();
 		mView.setViewName("home");
 		return mView;
 	}
 	
 	@RequestMapping("/addEmployeeForm.htm")
-	public ModelAndView displayAddEmployeeForm(ModelMap map) throws Exception{	
+	public ModelAndView displayAddEmployeeForm(ModelMap map) {
 		Employee employee=new Employee();
 		map.addAttribute(employee);
 		ModelAndView mView=new ModelAndView();
@@ -39,7 +39,7 @@ public class AddEmpController {
 	}
 	
 	@ModelAttribute("projectList")
-	public Map<String,String> populateProject()throws Exception {
+	public Map<String,String> populateProject() {
 		
 		List<String> allProjects = service.getAllProjects();
 		Map<String,String> projectMap=new HashMap<String,String>();
@@ -53,7 +53,7 @@ public class AddEmpController {
 	}
 	
 	@RequestMapping(value="/addEmployee.htm",method=RequestMethod.GET)
-	public ModelAndView AddEmployee(@ModelAttribute Employee employee)throws Exception{ 
+	public ModelAndView AddEmployee(@ModelAttribute Employee employee) {
 		ModelAndView mView=new ModelAndView();
 		
 		try{	

@@ -16,7 +16,7 @@ public class ReportController {
 	EmployeeProjectService service;
 	
 	@RequestMapping(value="/reportForm.htm")
-	public ModelAndView employeeReport()throws Exception{ 
+	public ModelAndView employeeReport() {
 		ModelAndView mView=new ModelAndView();
 		
 		try{

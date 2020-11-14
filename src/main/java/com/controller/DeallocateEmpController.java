@@ -18,14 +18,14 @@ public class DeallocateEmpController {
 	
 	
 	@RequestMapping("/deallocateEmployeeForm.htm")
-	public ModelAndView displayDeallocateEmployeeForm() throws Exception{	
+	public ModelAndView displayDeallocateEmployeeForm() {
 		ModelAndView mView=new ModelAndView();
 		mView.setViewName("deallocateEmployee");
 		return mView;
 	}
 	
 	@RequestMapping(value="/deAllocateEmployee.htm",method=RequestMethod.GET)
-	public ModelAndView deallocateEmployee(HttpServletRequest request)throws Exception{ 
+	public ModelAndView deallocateEmployee(HttpServletRequest request) {
 		ModelAndView mView=new ModelAndView();
 		Integer employeeId=Integer.parseInt(request.getParameter("empId"));
 		try{
